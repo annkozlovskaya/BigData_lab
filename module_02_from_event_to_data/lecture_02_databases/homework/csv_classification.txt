@@ -1,0 +1,38 @@
+# Список файлов и сущностей:
+
+- products — содержит информацию о товарах  
+- employees — содержит информацию о сотрудниках  
+- customers — содержит информацию о покупателях  
+- shops — содержит информацию о магазинах  
+- categories — содержит категории товаров  
+- cities — содержит список городов  
+- countries — содержит список стран  
+- sales — содержит информацию о продажах  
+
+
+# Основные сущности:
+- products  
+- employees  
+- customers  
+- shops  
+
+# Дополнительные сущности (справочные):
+- categories  
+- cities  
+- countries  
+
+# Операционная сущность:
+- sales — фиксирует процесс продажи товаров  
+
+# Связи между сущностями:
+
+- products связана с categories через атрибут category_id  
+- employees связана с shops через атрибут shop_id  
+- employees связана с cities через атрибут city_id  
+- shops связана с cities через атрибут city_id  
+- cities связана с countries через атрибут country_id  
+- sales связана с products через product_id  
+- sales связана с employees через employee_id  
+- sales связана с customers через customer_id  
+
+Связи между сущностями позволяют объединять данные из разных таблиц и получать полную информацию о процессе продаж.
