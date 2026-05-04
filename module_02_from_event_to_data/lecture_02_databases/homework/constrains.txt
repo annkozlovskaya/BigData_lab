@@ -1,0 +1,26 @@
+sales
+
+sales_id           — PRIMARY KEY (включает NOT NULL и UNIQUE)
+employee_id        — NOT NULL  
+customer_id        — NOT NULL  
+product_id         — NOT NULL  
+quantity           — CHECK (quantity > 0)  
+discount           — (опционально, может быть NULL)  
+                    CHECK (discount BETWEEN 0 AND 1)
+total_price        — NOT NULL 
+sales_timestamp    — NOT NULL  
+transaction_number — UNIQUE, NOT NULL
+
+
+products
+
+product_id          — PRIMARY KEY (включает NOT NULL и UNIQUE)
+product_name        - NOT NULL
+price               - NOT NULL
+                     CHECK (price > 0)  
+category_id         - NOT NULL
+class
+modify_timestamp
+resistant           - CHECK (resistant IN ('YES', 'NO'))
+is_allergic         - CHECK (resistant IN ('YES', 'NO'))
+vitality_days
