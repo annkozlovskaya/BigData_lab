@@ -1,0 +1,12 @@
+# Первичные ключи 
+
+ Сущность       Первичный ключ 
+
+ countries      country_id 
+ cities         city_id 
+ categories     category_id 
+ products       product_id 
+ shops          shop_id 
+ employees      employee_id 
+ customers      customer_id 
+ sales          sales_id 

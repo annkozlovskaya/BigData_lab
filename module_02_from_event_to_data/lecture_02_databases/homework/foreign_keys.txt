@@ -1,0 +1,23 @@
+# Внешние ключи сущностей
+
+## cities
+- country_id → countries.country_id
+
+## shops
+- city_id → cities.city_id
+
+## employees
+- city_id → cities.city_id
+- shop_id → shops.shop_id
+
+## customers
+- city_id → cities.city_id
+
+## products
+- category_id → categories.category_id
+
+## sales
+- product_id → products.product_id
+- employee_id → employees.employee_id
+- customer_id → customers.customer_id
+- shop_id → shops.shop_id
